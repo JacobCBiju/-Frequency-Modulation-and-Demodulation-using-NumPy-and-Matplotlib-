@@ -34,6 +34,59 @@ __Algorithm:__
 
 __Programme:__
 
+import numpy as np
+
+import matplotlib.pyplot as plt
+
+Am=5.2
+
+Ac=10.4
+
+fm=414
+
+fc=4140
+
+fs=41400
+
+t=np.arange(0,3/fm,1/fs)
+
+m=Am*np.cos(2*np.pi*fm*t)
+
+c=Ac*np.cos(2*np.pi*fc*t)
+
+b=4.5
+
+eFM =Ac*np.cos(2 * np.pi * fc * t + b * np.sin(2 * np.pi * fm * t))
+
+plt.subplot(3,1,1)
+
+plt.plot(t,m)
+
+plt.grid()
+
+plt.subplot(3,1,2)
+
+plt.plot(t,c)
+
+plt.grid()
+
+plt.subplot(3,1,3)
+
+plt.plot(t,eFM)
+
+plt.grid()
+
+
+
+plt.tight_layout()
+
+plt.show()
+
+
 __Output:__
 
+<img width="630" height="469" alt="image" src="https://github.com/user-attachments/assets/be5b5995-b9be-4263-806a-8f3b3c69effa" />
+
 __Result:__
+
+The message signal, carrier signal, and frequency modulated (FM) signal will be displayed in separate plots. The modulated signal will show frequency variations corresponding to the amplitude of the message signal
