@@ -77,11 +77,13 @@ plt.plot(t,eFM)
 plt.grid()
 
 
-
 plt.tight_layout()
 
 plt.show()
 
+__Tabulation__
+
+![WhatsApp Image 2025-11-19 at 10 20 47_c491ff87](https://github.com/user-attachments/assets/270a49d2-a525-46e0-a1d8-645cadb0ff44)
 
 __Output:__
 
